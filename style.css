@@ -1,0 +1,120 @@
+/* Basic Reset */
+body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9; /* subtle background color */
+}
+
+/* Header Styling */
+header {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto; /* centers the header */
+    text-align: center; /* centers the header text */
+}
+
+/* Main Container */
+#container {
+    width: 80%;
+    max-width: 600px; /* max width for larger screens */
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 30px auto; /* center container and add vertical spacing */
+    background-color: white; /* background color for contrast */
+    box-sizing: border-box;
+}
+
+/* Article Styling for Form */
+article {
+    width: 100%; /* takes full width of the container */
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 20px; /* adds top margin */
+    background-color: #eef; /* light background color for the form area */
+    box-sizing: border-box;
+}
+
+/* Headings */
+h1 {
+    font-size: 24px; /* reduced font size for better scaling */
+    border: none;
+    border-radius: 20px;
+    background-color: azure;
+    padding: 15px;
+    color: #333; /* darker color for better readability */
+}
+
+/* Form Elements Container */
+.placeholders {
+    margin: 20px 0; 
+    padding: 10px;
+}
+
+/* Labels and Inputs */
+label {
+    display: block; 
+    font-size: 18px;
+    color: #555; /* softer color for labels */
+}
+
+input, select {
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0 10px;
+    width: 100%;
+    margin-top: 5px; /* space between label and input */
+}
+
+input:valid {
+    background-color: #eaffea;
+}
+
+input:invalid {
+    background-color: #ffebeb;
+}
+
+/* Submit Button Styling */
+button[type=submit] {
+    height: 50px;
+    background-color: #4CAF50; /* more vibrant color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 14px; /* smaller font size for error messages */
+    margin-top: 5px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    #container, header {
+        width: 95%;
+        padding: 15px;
+    }
+
+    article {
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label, input, select, button[type=submit] {
+        font-size: 16px;
+    }
+}
