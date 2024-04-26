@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 include "db.php";
 
 $user_id = $_SESSION['user_id'];
-$sql = "SELECT board_state, score_x, score_o, current_player FROM game_states WHERE user_id = ?";
+$sql = "SELECT board_state, score_x, score_o, draw, current_player FROM game_states WHERE user_id = ?";
 if ($stmt = $conn->prepare($sql)) {
     $stmt->bind_param("i", $user_id);
     if ($stmt->execute()) {
