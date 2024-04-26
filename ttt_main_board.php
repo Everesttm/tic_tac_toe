@@ -65,12 +65,14 @@ $encodedUserId = json_encode($_SESSION['user_id']);
             <p id="message"></p>
             <button id="close-message">OK</button>
         </div>
-        <button id="pause-game">Pause Game</button>
-        <button id="resume-game">Resume Game</button>
-        <button id="check-game-state">Check Game State</button>
+        <div id='side-buttons'>
+            <button id="pause-game">Pause Game</button>
+            <button id="resume-game">Resume Game</button>
+            <button id="check-game-state">Check Game State</button>
 
-        <!-- Score Board -->
-        <aside id="score-board">X: 0 | O: 0 | Draw: 0</aside>
+            <!-- Score Board -->
+            <aside id="score-board">X: 0 | O: 0 | Draw: 0</aside>
+        </div>
     </div>
 
     <footer>
